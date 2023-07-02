@@ -13,7 +13,7 @@ Content-Type: application/json
   "config": {
     "connector.class": "com.bloxbean.kafka.connectors.web3.source.blocks.BlockSourceConnector",
     "tasks.max": 1,
-    "web3_rpc_url": "http://<node>",
+    "web3_rpc_url": "{{web3_url}}",
     "topic": "aion-latest-blocks",
     "transaction_topic": "aion-transactions",
     "ignore_block_fields": "logsBloom,extraData",
@@ -34,7 +34,7 @@ Content-Type: application/json
   "config": {
     "connector.class": "com.bloxbean.kafka.connectors.web3.source.blocks.BlockSourceConnector",
     "tasks.max": 1,
-    "web3_rpc_url": "http://<node>",
+    "web3_rpc_url": "{{web3_url}}",
     "topic": "aion-blocks",
     "start_block": 106332167,
     "block_time": 10,
@@ -73,7 +73,7 @@ Content-Type: application/json
   "config": {
     "connector.class": "com.bloxbean.kafka.connectors.web3.source.events.EventSourceConnector",
     "tasks.max": 1,
-    "web3_rpc_url": "http://<host>:8545",
+    "web3_rpc_url": "{{web3_url}}",
     "topic": "aion-events",
     "start_block": 106332167,
     "block_time": 10,
