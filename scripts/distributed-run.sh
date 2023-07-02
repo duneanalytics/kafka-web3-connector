@@ -1,1 +1,1 @@
-$KAFKA_HOME/bin/connect-distributed.sh ../config/connect-distributed.properties
+"$KAFKA_HOME"/bin/connect-distributed.sh ../config/connect-distributed.properties
