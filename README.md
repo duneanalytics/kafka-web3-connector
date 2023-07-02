@@ -1,5 +1,7 @@
 # Kafka Web3 Connector
 
+Forked from https://github.com/satran004/kafka-web3-connector
+
 This connector reads blocks or events from a web3 json rpc compatible blockchain (Example: Aion, Ethereum) and pushes them to Kafka.
 
 There are two available source connectors
