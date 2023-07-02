@@ -20,6 +20,8 @@ jobs:
       uses: actions/setup-java@v3
       with:
         java-version: 17
+        cache: "maven"
+        distribution: "corretto"
     - name: Build with Maven
       run: mvn --batch-mode --update-snapshots package
     - name: Make staging and copy  
