@@ -11,6 +11,7 @@
     <properties>
         <maven.compiler.target>${jdk.version}</maven.compiler.target>
         <maven.compiler.source>${jdk.version}</maven.compiler.source>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
 
     <dependencies>
@@ -96,7 +97,6 @@
                         <configuration>
                             <appendAssemblyId>true</appendAssemblyId>
                             <descriptors>
-                                <descriptor>src/main/assembly/package.xml</descriptor>
                                 <descriptor>src/main/assembly/zip.xml</descriptor>
                             </descriptors>
                         </configuration>

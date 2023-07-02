@@ -13,12 +13,12 @@ Content-Type: application/json
   "config": {
     "connector.class": "com.bloxbean.kafka.connectors.web3.source.blocks.BlockSourceConnector",
     "tasks.max": 1,
-    "web3_rpc_url": "http://<host>:8545",
+    "web3_rpc_url": "http://<node>",
     "topic": "aion-latest-blocks",
     "transaction_topic": "aion-transactions",
     "ignore_block_fields": "logsBloom,extraData",
     "ignore_transaction_fields": "input",
-    "start_block": 0,
+    "start_block": 106332167,
     "block_time": 10,
     "no_of_blocks_for_finality": 0
   }
@@ -34,9 +34,9 @@ Content-Type: application/json
   "config": {
     "connector.class": "com.bloxbean.kafka.connectors.web3.source.blocks.BlockSourceConnector",
     "tasks.max": 1,
-    "web3_rpc_url": "http://<host>:8545",
+    "web3_rpc_url": "http://<node>",
     "topic": "aion-blocks",
-    "start_block": 0,
+    "start_block": 106332167,
     "block_time": 10,
     "no_of_blocks_for_finality": 30
   }
@@ -58,7 +58,7 @@ PUT http://localhost:8083/connectors/bloxbean-web3-source-connector/pause
 PUT http://localhost:8083/connectors/bloxbean-web3-source-connector/resume
 
 ###
-DELETE http://localhost:8083/connectors/<connector_name>
+DELETE http://localhost:8083/connectors/bloxbean-web3-source-connector-latest-blocks
 
 ###
 
@@ -75,7 +75,7 @@ Content-Type: application/json
     "tasks.max": 1,
     "web3_rpc_url": "http://<host>:8545",
     "topic": "aion-events",
-    "start_block": 0,
+    "start_block": 106332167,
     "block_time": 10,
     "no_of_blocks_for_finality": 0
   }
