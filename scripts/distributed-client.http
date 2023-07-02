@@ -52,14 +52,18 @@ GET http://localhost:8083/connectors/bloxbean-web3-source-connector/status
 POST http://localhost:8083/connectors/bloxbean-web3-source-connector/restart
 
 ###
-PUT http://localhost:8083/connectors/bloxbean-web3-source-connector/pause
+PUT http://localhost:8083/connectors/bloxbean-web3-source-connector-latest-blocks/pause
 
 ###
 PUT http://localhost:8083/connectors/bloxbean-web3-source-connector/resume
 
 ###
-DELETE http://localhost:8083/connectors/bloxbean-web3-source-connector-latest-blocks
+DELETE http://localhost:8083/connectors/bloxbean-web3-source-connector
 
+###
+
+###
+GET http://localhost:8088/healthcheck
 ###
 
 
